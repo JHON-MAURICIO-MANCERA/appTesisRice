@@ -4,6 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background3"
     tools:context=".SignInLoginActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:gravity="start"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/titleLoginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/title_activity_login" />
+
+        <ImageView
+            android:id="@+id/logoLoginImage"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:contentDescription="@string/all"
+            app:srcCompat="@drawable/logo"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/editEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ic_field"
+            android:drawableStart="@drawable/ic_email"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/prompt_password"
+            android:drawableStart="@drawable/ic_lock"
+            android:background="@drawable/ic_field"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/ic_buttom"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/action_sign_in" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/ic_buttom_black"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/action_register" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
