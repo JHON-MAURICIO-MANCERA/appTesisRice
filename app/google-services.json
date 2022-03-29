@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170304565482",
+    "project_id": "riceapp-3d4b9",
+    "storage_bucket": "riceapp-3d4b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170304565482:android:3cbf4f3d6109d3965ae793",
+        "android_client_info": {
+          "package_name": "com.proyecto_final.mancera.riceapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170304565482-mo465a7b79t1flplvfc7b1apfnsg5ggb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ1jt1HhUbOGJuDhFjpPLxqoXDqKiVl3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170304565482-mo465a7b79t1flplvfc7b1apfnsg5ggb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
